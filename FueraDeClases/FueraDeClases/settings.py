@@ -36,6 +36,8 @@ INSTALLED_APPS = (
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'django.contrib.admindocs',
+    'FueraDeClases.apps.home',
 )
 
 MIDDLEWARE_CLASSES = (
@@ -57,8 +59,12 @@ WSGI_APPLICATION = 'FueraDeClases.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+        'ENGINE': 'django.db.backends.mysql',
+        'NAME': 'FueraDeClases',
+        'USER': 'root',
+        'PASSWORD': 'alfrod1712',
+        'HOST': '',
+        'PORT': '',
     }
 }
 
@@ -80,3 +86,7 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/1.6/howto/static-files/
 
 STATIC_URL = '/static/'
+
+MEDIA_ROOT = '/media/'
+
+
