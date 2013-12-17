@@ -26,6 +26,9 @@ TEMPLATE_DEBUG = True
 
 ALLOWED_HOSTS = []
 
+TEMPLATE_DIRS = (
+	os.path.join(os.path.dirname(__file__), 'templates'),
+)
 
 # Application definition
 
@@ -62,7 +65,7 @@ DATABASES = {
         'ENGINE': 'django.db.backends.mysql',
         'NAME': 'FueraDeClases',
         'USER': 'root',
-        'PASSWORD': 'alfrod1712',
+        'PASSWORD': '2434516',
         'HOST': '',
         'PORT': '',
     }
